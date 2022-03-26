@@ -545,43 +545,17 @@ phas0100assignment2/fast:
 .PHONY : phas0100assignment2/fast
 
 #=============================================================================
-# Target rules for targets named nbsimMyFirstApp
+# Target rules for targets named nbsimTry
 
 # Build rule for target.
-nbsimMyFirstApp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nbsimMyFirstApp
-.PHONY : nbsimMyFirstApp
+nbsimTry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nbsimTry
+.PHONY : nbsimTry
 
 # fast build rule for target.
-nbsimMyFirstApp/fast:
-	$(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/build
-.PHONY : nbsimMyFirstApp/fast
-
-#=============================================================================
-# Target rules for targets named nbsimCommandLineArgsTest
-
-# Build rule for target.
-nbsimCommandLineArgsTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nbsimCommandLineArgsTest
-.PHONY : nbsimCommandLineArgsTest
-
-# fast build rule for target.
-nbsimCommandLineArgsTest/fast:
-	$(MAKE) -f Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build.make Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build
-.PHONY : nbsimCommandLineArgsTest/fast
-
-#=============================================================================
-# Target rules for targets named nbsimBasicTest
-
-# Build rule for target.
-nbsimBasicTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nbsimBasicTest
-.PHONY : nbsimBasicTest
-
-# fast build rule for target.
-nbsimBasicTest/fast:
-	$(MAKE) -f Testing/CMakeFiles/nbsimBasicTest.dir/build.make Testing/CMakeFiles/nbsimBasicTest.dir/build
-.PHONY : nbsimBasicTest/fast
+nbsimTry/fast:
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build
+.PHONY : nbsimTry/fast
 
 # Help Target
 help:
@@ -625,9 +599,7 @@ help:
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
 	@echo "... phas0100assignment2"
-	@echo "... nbsimMyFirstApp"
-	@echo "... nbsimCommandLineArgsTest"
-	@echo "... nbsimBasicTest"
+	@echo "... nbsimTry"
 .PHONY : help
 
 

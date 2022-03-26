@@ -96,11 +96,25 @@ Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phas0100assignment2.dir/nbsimException.cpp.s"
 	cd /workspaces/PHAS0100Assignment2/build/Code/Lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment2/Code/Lib/nbsimException.cpp -o CMakeFiles/phas0100assignment2.dir/nbsimException.cpp.s
 
+Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.o: Code/Lib/CMakeFiles/phas0100assignment2.dir/flags.make
+Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.o: ../Code/Lib/nbsimParticle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/PHAS0100Assignment2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.o"
+	cd /workspaces/PHAS0100Assignment2/build/Code/Lib && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.o -c /workspaces/PHAS0100Assignment2/Code/Lib/nbsimParticle.cpp
+
+Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.i"
+	cd /workspaces/PHAS0100Assignment2/build/Code/Lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/PHAS0100Assignment2/Code/Lib/nbsimParticle.cpp > CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.i
+
+Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.s"
+	cd /workspaces/PHAS0100Assignment2/build/Code/Lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/PHAS0100Assignment2/Code/Lib/nbsimParticle.cpp -o CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.s
+
 # Object files for target phas0100assignment2
 phas0100assignment2_OBJECTS = \
 "CMakeFiles/phas0100assignment2.dir/nbsimBasicTypes.cpp.o" \
 "CMakeFiles/phas0100assignment2.dir/nbsimMyFunctions.cpp.o" \
-"CMakeFiles/phas0100assignment2.dir/nbsimException.cpp.o"
+"CMakeFiles/phas0100assignment2.dir/nbsimException.cpp.o" \
+"CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.o"
 
 # External object files for target phas0100assignment2
 phas0100assignment2_EXTERNAL_OBJECTS =
@@ -108,9 +122,10 @@ phas0100assignment2_EXTERNAL_OBJECTS =
 bin/libphas0100assignment2.a: Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimBasicTypes.cpp.o
 bin/libphas0100assignment2.a: Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimMyFunctions.cpp.o
 bin/libphas0100assignment2.a: Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimException.cpp.o
+bin/libphas0100assignment2.a: Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.o
 bin/libphas0100assignment2.a: Code/Lib/CMakeFiles/phas0100assignment2.dir/build.make
 bin/libphas0100assignment2.a: Code/Lib/CMakeFiles/phas0100assignment2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/PHAS0100Assignment2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../bin/libphas0100assignment2.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/PHAS0100Assignment2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../bin/libphas0100assignment2.a"
 	cd /workspaces/PHAS0100Assignment2/build/Code/Lib && $(CMAKE_COMMAND) -P CMakeFiles/phas0100assignment2.dir/cmake_clean_target.cmake
 	cd /workspaces/PHAS0100Assignment2/build/Code/Lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/phas0100assignment2.dir/link.txt --verbose=$(VERBOSE)
 

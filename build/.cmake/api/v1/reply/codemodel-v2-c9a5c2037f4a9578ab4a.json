@@ -76,7 +76,7 @@
 					"source" : "Code/Lib",
 					"targetIndexes" : 
 					[
-						31
+						29
 					]
 				},
 				{
@@ -90,7 +90,7 @@
 					"source" : "Code/CommandLineApps",
 					"targetIndexes" : 
 					[
-						30
+						28
 					]
 				},
 				{
@@ -101,12 +101,7 @@
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "Testing",
-					"targetIndexes" : 
-					[
-						28,
-						29
-					]
+					"source" : "Testing"
 				}
 			],
 			"name" : "Debug",
@@ -153,9 +148,7 @@
 						26,
 						27,
 						28,
-						29,
-						30,
-						31
+						29
 					]
 				}
 			],
@@ -358,30 +351,16 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 4,
-					"id" : "nbsimBasicTest::@ea41f389d6241025cb5e",
-					"jsonFile" : "target-nbsimBasicTest-Debug-bba0e7b390b47443b671.json",
-					"name" : "nbsimBasicTest",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 4,
-					"id" : "nbsimCommandLineArgsTest::@ea41f389d6241025cb5e",
-					"jsonFile" : "target-nbsimCommandLineArgsTest-Debug-83227bc905496170f1d4.json",
-					"name" : "nbsimCommandLineArgsTest",
-					"projectIndex" : 0
-				},
-				{
 					"directoryIndex" : 3,
-					"id" : "nbsimMyFirstApp::@b89039883a6cad3d0086",
-					"jsonFile" : "target-nbsimMyFirstApp-Debug-0ecf44bea45b1022bc0c.json",
-					"name" : "nbsimMyFirstApp",
+					"id" : "nbsimTry::@b89039883a6cad3d0086",
+					"jsonFile" : "target-nbsimTry-Debug-bb34fc39ee0a29b15122.json",
+					"name" : "nbsimTry",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "phas0100assignment2::@fa14c79d6de89ebc8e0e",
-					"jsonFile" : "target-phas0100assignment2-Debug-be14fc6bad301a206502.json",
+					"jsonFile" : "target-phas0100assignment2-Debug-a9f1857f5f7e1f9d85d9.json",
 					"name" : "phas0100assignment2",
 					"projectIndex" : 0
 				}

@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = /workspaces/PHAS0100Assignment2/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -123,18 +135,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /workspaces/PHAS0100Assignment2/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment2/build/CMakeFiles /workspaces/PHAS0100Assignment2/build/Testing/CMakeFiles/progress.marks
@@ -167,144 +167,19 @@ depend:
 	cd /workspaces/PHAS0100Assignment2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/rule:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/rule
-.PHONY : Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/rule
-
-# Convenience name for target.
-nbsimCommandLineArgsTest: Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/rule
-
-.PHONY : nbsimCommandLineArgsTest
-
-# fast build rule for target.
-nbsimCommandLineArgsTest/fast:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build.make Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build
-.PHONY : nbsimCommandLineArgsTest/fast
-
-# Convenience name for target.
-Testing/CMakeFiles/nbsimBasicTest.dir/rule:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/nbsimBasicTest.dir/rule
-.PHONY : Testing/CMakeFiles/nbsimBasicTest.dir/rule
-
-# Convenience name for target.
-nbsimBasicTest: Testing/CMakeFiles/nbsimBasicTest.dir/rule
-
-.PHONY : nbsimBasicTest
-
-# fast build rule for target.
-nbsimBasicTest/fast:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimBasicTest.dir/build.make Testing/CMakeFiles/nbsimBasicTest.dir/build
-.PHONY : nbsimBasicTest/fast
-
-nbsimBasicTest.o: nbsimBasicTest.cpp.o
-
-.PHONY : nbsimBasicTest.o
-
-# target to build an object file
-nbsimBasicTest.cpp.o:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimBasicTest.dir/build.make Testing/CMakeFiles/nbsimBasicTest.dir/nbsimBasicTest.cpp.o
-.PHONY : nbsimBasicTest.cpp.o
-
-nbsimBasicTest.i: nbsimBasicTest.cpp.i
-
-.PHONY : nbsimBasicTest.i
-
-# target to preprocess a source file
-nbsimBasicTest.cpp.i:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimBasicTest.dir/build.make Testing/CMakeFiles/nbsimBasicTest.dir/nbsimBasicTest.cpp.i
-.PHONY : nbsimBasicTest.cpp.i
-
-nbsimBasicTest.s: nbsimBasicTest.cpp.s
-
-.PHONY : nbsimBasicTest.s
-
-# target to generate assembly for a file
-nbsimBasicTest.cpp.s:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimBasicTest.dir/build.make Testing/CMakeFiles/nbsimBasicTest.dir/nbsimBasicTest.cpp.s
-.PHONY : nbsimBasicTest.cpp.s
-
-nbsimCatchMain.o: nbsimCatchMain.cpp.o
-
-.PHONY : nbsimCatchMain.o
-
-# target to build an object file
-nbsimCatchMain.cpp.o:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build.make Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/nbsimCatchMain.cpp.o
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimBasicTest.dir/build.make Testing/CMakeFiles/nbsimBasicTest.dir/nbsimCatchMain.cpp.o
-.PHONY : nbsimCatchMain.cpp.o
-
-nbsimCatchMain.i: nbsimCatchMain.cpp.i
-
-.PHONY : nbsimCatchMain.i
-
-# target to preprocess a source file
-nbsimCatchMain.cpp.i:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build.make Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/nbsimCatchMain.cpp.i
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimBasicTest.dir/build.make Testing/CMakeFiles/nbsimBasicTest.dir/nbsimCatchMain.cpp.i
-.PHONY : nbsimCatchMain.cpp.i
-
-nbsimCatchMain.s: nbsimCatchMain.cpp.s
-
-.PHONY : nbsimCatchMain.s
-
-# target to generate assembly for a file
-nbsimCatchMain.cpp.s:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build.make Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/nbsimCatchMain.cpp.s
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimBasicTest.dir/build.make Testing/CMakeFiles/nbsimBasicTest.dir/nbsimCatchMain.cpp.s
-.PHONY : nbsimCatchMain.cpp.s
-
-nbsimCommandLineArgsTest.o: nbsimCommandLineArgsTest.cpp.o
-
-.PHONY : nbsimCommandLineArgsTest.o
-
-# target to build an object file
-nbsimCommandLineArgsTest.cpp.o:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build.make Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/nbsimCommandLineArgsTest.cpp.o
-.PHONY : nbsimCommandLineArgsTest.cpp.o
-
-nbsimCommandLineArgsTest.i: nbsimCommandLineArgsTest.cpp.i
-
-.PHONY : nbsimCommandLineArgsTest.i
-
-# target to preprocess a source file
-nbsimCommandLineArgsTest.cpp.i:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build.make Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/nbsimCommandLineArgsTest.cpp.i
-.PHONY : nbsimCommandLineArgsTest.cpp.i
-
-nbsimCommandLineArgsTest.s: nbsimCommandLineArgsTest.cpp.s
-
-.PHONY : nbsimCommandLineArgsTest.s
-
-# target to generate assembly for a file
-nbsimCommandLineArgsTest.cpp.s:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build.make Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/nbsimCommandLineArgsTest.cpp.s
-.PHONY : nbsimCommandLineArgsTest.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... install/strip"
-	@echo "... nbsimCommandLineArgsTest"
-	@echo "... nbsimBasicTest"
-	@echo "... nbsimBasicTest.o"
-	@echo "... nbsimBasicTest.i"
-	@echo "... nbsimBasicTest.s"
-	@echo "... nbsimCatchMain.o"
-	@echo "... nbsimCatchMain.i"
-	@echo "... nbsimCatchMain.s"
-	@echo "... nbsimCommandLineArgsTest.o"
-	@echo "... nbsimCommandLineArgsTest.i"
-	@echo "... nbsimCommandLineArgsTest.s"
 .PHONY : help
 
 

@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 28,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
@@ -59,7 +59,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-ignored-attributes -fopenmp -g  "
+					"fragment" : " -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-deprecated-declarations -Wno-ignored-attributes -fopenmp -g  "
 				},
 				{
 					"fragment" : "-std=c++17"
@@ -83,9 +83,10 @@
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
-				2,
 				3,
-				4
+				4,
+				5,
+				6
 			]
 		}
 	],
@@ -103,23 +104,25 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				1
+				2
 			]
 		},
 		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				2,
 				3,
-				4
+				4,
+				5,
+				6
 			]
 		}
 	],
@@ -128,6 +131,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Code/Lib/nbsimExceptionMacro.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Code/Lib/nbsimParticle.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -151,6 +159,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Code/Lib/nbsimException.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Code/Lib/nbsimParticle.cpp",
 			"sourceGroupIndex" : 2
 		}
 	],

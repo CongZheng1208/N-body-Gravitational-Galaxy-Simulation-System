@@ -68,6 +68,18 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -123,18 +135,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /workspaces/PHAS0100Assignment2/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment2/build/CMakeFiles /workspaces/PHAS0100Assignment2/build/Code/CommandLineApps/CMakeFiles/progress.marks
@@ -168,46 +168,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/rule:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/rule
-.PHONY : Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/rule
+Code/CommandLineApps/CMakeFiles/nbsimTry.dir/rule:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/nbsimTry.dir/rule
+.PHONY : Code/CommandLineApps/CMakeFiles/nbsimTry.dir/rule
 
 # Convenience name for target.
-nbsimMyFirstApp: Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/rule
+nbsimTry: Code/CommandLineApps/CMakeFiles/nbsimTry.dir/rule
 
-.PHONY : nbsimMyFirstApp
+.PHONY : nbsimTry
 
 # fast build rule for target.
-nbsimMyFirstApp/fast:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/build
-.PHONY : nbsimMyFirstApp/fast
+nbsimTry/fast:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build
+.PHONY : nbsimTry/fast
 
-nbsimMyFirstApp.o: nbsimMyFirstApp.cpp.o
+nbsimTry.o: nbsimTry.cpp.o
 
-.PHONY : nbsimMyFirstApp.o
+.PHONY : nbsimTry.o
 
 # target to build an object file
-nbsimMyFirstApp.cpp.o:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/nbsimMyFirstApp.cpp.o
-.PHONY : nbsimMyFirstApp.cpp.o
+nbsimTry.cpp.o:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimTry.dir/nbsimTry.cpp.o
+.PHONY : nbsimTry.cpp.o
 
-nbsimMyFirstApp.i: nbsimMyFirstApp.cpp.i
+nbsimTry.i: nbsimTry.cpp.i
 
-.PHONY : nbsimMyFirstApp.i
+.PHONY : nbsimTry.i
 
 # target to preprocess a source file
-nbsimMyFirstApp.cpp.i:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/nbsimMyFirstApp.cpp.i
-.PHONY : nbsimMyFirstApp.cpp.i
+nbsimTry.cpp.i:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimTry.dir/nbsimTry.cpp.i
+.PHONY : nbsimTry.cpp.i
 
-nbsimMyFirstApp.s: nbsimMyFirstApp.cpp.s
+nbsimTry.s: nbsimTry.cpp.s
 
-.PHONY : nbsimMyFirstApp.s
+.PHONY : nbsimTry.s
 
 # target to generate assembly for a file
-nbsimMyFirstApp.cpp.s:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/nbsimMyFirstApp.cpp.s
-.PHONY : nbsimMyFirstApp.cpp.s
+nbsimTry.cpp.s:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimTry.dir/nbsimTry.cpp.s
+.PHONY : nbsimTry.cpp.s
 
 # Help Target
 help:
@@ -216,16 +216,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... install/local"
-	@echo "... nbsimMyFirstApp"
-	@echo "... nbsimMyFirstApp.o"
-	@echo "... nbsimMyFirstApp.i"
-	@echo "... nbsimMyFirstApp.s"
+	@echo "... nbsimTry"
+	@echo "... nbsimTry.o"
+	@echo "... nbsimTry.i"
+	@echo "... nbsimTry.s"
 .PHONY : help
 
 

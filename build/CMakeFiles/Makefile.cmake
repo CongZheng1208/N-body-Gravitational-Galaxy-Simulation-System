@@ -103,7 +103,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousTest.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
   "Code/Lib/CMakeFiles/phas0100assignment2.dir/DependInfo.cmake"
-  "Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/DependInfo.cmake"
-  "Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/DependInfo.cmake"
-  "Testing/CMakeFiles/nbsimBasicTest.dir/DependInfo.cmake"
+  "Code/CommandLineApps/CMakeFiles/nbsimTry.dir/DependInfo.cmake"
   )

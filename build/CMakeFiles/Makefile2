@@ -123,7 +123,7 @@ Code/clean: Code/CommandLineApps/clean
 # Directory level rules for directory Code/CommandLineApps
 
 # Recursive "all" directory target.
-Code/CommandLineApps/all: Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/all
+Code/CommandLineApps/all: Code/CommandLineApps/CMakeFiles/nbsimTry.dir/all
 
 .PHONY : Code/CommandLineApps/all
 
@@ -133,7 +133,7 @@ Code/CommandLineApps/preinstall:
 .PHONY : Code/CommandLineApps/preinstall
 
 # Recursive "clean" directory target.
-Code/CommandLineApps/clean: Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/clean
+Code/CommandLineApps/clean: Code/CommandLineApps/CMakeFiles/nbsimTry.dir/clean
 
 .PHONY : Code/CommandLineApps/clean
 
@@ -159,8 +159,7 @@ Code/Lib/clean: Code/Lib/CMakeFiles/phas0100assignment2.dir/clean
 # Directory level rules for directory Testing
 
 # Recursive "all" directory target.
-Testing/all: Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/all
-Testing/all: Testing/CMakeFiles/nbsimBasicTest.dir/all
+Testing/all:
 
 .PHONY : Testing/all
 
@@ -170,8 +169,7 @@ Testing/preinstall:
 .PHONY : Testing/preinstall
 
 # Recursive "clean" directory target.
-Testing/clean: Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/clean
-Testing/clean: Testing/CMakeFiles/nbsimBasicTest.dir/clean
+Testing/clean:
 
 .PHONY : Testing/clean
 
@@ -938,12 +936,12 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 Code/Lib/CMakeFiles/phas0100assignment2.dir/all:
 	$(MAKE) -f Code/Lib/CMakeFiles/phas0100assignment2.dir/build.make Code/Lib/CMakeFiles/phas0100assignment2.dir/depend
 	$(MAKE) -f Code/Lib/CMakeFiles/phas0100assignment2.dir/build.make Code/Lib/CMakeFiles/phas0100assignment2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment2/build/CMakeFiles --progress-num=9,10,11,12 "Built target phas0100assignment2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment2/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target phas0100assignment2"
 .PHONY : Code/Lib/CMakeFiles/phas0100assignment2.dir/all
 
 # Build rule for subdir invocation for target.
 Code/Lib/CMakeFiles/phas0100assignment2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment2/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment2/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 Code/Lib/CMakeFiles/phas0100assignment2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment2/build/CMakeFiles 0
 .PHONY : Code/Lib/CMakeFiles/phas0100assignment2.dir/rule
@@ -959,85 +957,31 @@ Code/Lib/CMakeFiles/phas0100assignment2.dir/clean:
 .PHONY : Code/Lib/CMakeFiles/phas0100assignment2.dir/clean
 
 #=============================================================================
-# Target rules for target Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir
+# Target rules for target Code/CommandLineApps/CMakeFiles/nbsimTry.dir
 
 # All Build rule for target.
-Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/all: Code/Lib/CMakeFiles/phas0100assignment2.dir/all
-	$(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/depend
-	$(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment2/build/CMakeFiles --progress-num=7,8 "Built target nbsimMyFirstApp"
-.PHONY : Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/all
+Code/CommandLineApps/CMakeFiles/nbsimTry.dir/all:
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimTry.dir/depend
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment2/build/CMakeFiles --progress-num=1,2 "Built target nbsimTry"
+.PHONY : Code/CommandLineApps/CMakeFiles/nbsimTry.dir/all
 
 # Build rule for subdir invocation for target.
-Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment2/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/all
+Code/CommandLineApps/CMakeFiles/nbsimTry.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment2/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/nbsimTry.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment2/build/CMakeFiles 0
-.PHONY : Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/rule
+.PHONY : Code/CommandLineApps/CMakeFiles/nbsimTry.dir/rule
 
 # Convenience name for target.
-nbsimMyFirstApp: Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/rule
+nbsimTry: Code/CommandLineApps/CMakeFiles/nbsimTry.dir/rule
 
-.PHONY : nbsimMyFirstApp
-
-# clean rule for target.
-Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/clean:
-	$(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/clean
-.PHONY : Code/CommandLineApps/CMakeFiles/nbsimMyFirstApp.dir/clean
-
-#=============================================================================
-# Target rules for target Testing/CMakeFiles/nbsimCommandLineArgsTest.dir
-
-# All Build rule for target.
-Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/all: Code/Lib/CMakeFiles/phas0100assignment2.dir/all
-	$(MAKE) -f Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build.make Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/depend
-	$(MAKE) -f Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build.make Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment2/build/CMakeFiles --progress-num=4,5,6 "Built target nbsimCommandLineArgsTest"
-.PHONY : Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/all
-
-# Build rule for subdir invocation for target.
-Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment2/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment2/build/CMakeFiles 0
-.PHONY : Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/rule
-
-# Convenience name for target.
-nbsimCommandLineArgsTest: Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/rule
-
-.PHONY : nbsimCommandLineArgsTest
+.PHONY : nbsimTry
 
 # clean rule for target.
-Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/clean:
-	$(MAKE) -f Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/build.make Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/clean
-.PHONY : Testing/CMakeFiles/nbsimCommandLineArgsTest.dir/clean
-
-#=============================================================================
-# Target rules for target Testing/CMakeFiles/nbsimBasicTest.dir
-
-# All Build rule for target.
-Testing/CMakeFiles/nbsimBasicTest.dir/all: Code/Lib/CMakeFiles/phas0100assignment2.dir/all
-	$(MAKE) -f Testing/CMakeFiles/nbsimBasicTest.dir/build.make Testing/CMakeFiles/nbsimBasicTest.dir/depend
-	$(MAKE) -f Testing/CMakeFiles/nbsimBasicTest.dir/build.make Testing/CMakeFiles/nbsimBasicTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/PHAS0100Assignment2/build/CMakeFiles --progress-num=1,2,3 "Built target nbsimBasicTest"
-.PHONY : Testing/CMakeFiles/nbsimBasicTest.dir/all
-
-# Build rule for subdir invocation for target.
-Testing/CMakeFiles/nbsimBasicTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment2/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/nbsimBasicTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/PHAS0100Assignment2/build/CMakeFiles 0
-.PHONY : Testing/CMakeFiles/nbsimBasicTest.dir/rule
-
-# Convenience name for target.
-nbsimBasicTest: Testing/CMakeFiles/nbsimBasicTest.dir/rule
-
-.PHONY : nbsimBasicTest
-
-# clean rule for target.
-Testing/CMakeFiles/nbsimBasicTest.dir/clean:
-	$(MAKE) -f Testing/CMakeFiles/nbsimBasicTest.dir/build.make Testing/CMakeFiles/nbsimBasicTest.dir/clean
-.PHONY : Testing/CMakeFiles/nbsimBasicTest.dir/clean
+Code/CommandLineApps/CMakeFiles/nbsimTry.dir/clean:
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimTry.dir/clean
+.PHONY : Code/CommandLineApps/CMakeFiles/nbsimTry.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
