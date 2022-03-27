@@ -168,46 +168,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Code/CommandLineApps/CMakeFiles/nbsimTry.dir/rule:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/nbsimTry.dir/rule
-.PHONY : Code/CommandLineApps/CMakeFiles/nbsimTry.dir/rule
+Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/rule:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/rule
+.PHONY : Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/rule
 
 # Convenience name for target.
-nbsimTry: Code/CommandLineApps/CMakeFiles/nbsimTry.dir/rule
+solarSystemSimulator: Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/rule
 
-.PHONY : nbsimTry
+.PHONY : solarSystemSimulator
 
 # fast build rule for target.
-nbsimTry/fast:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build
-.PHONY : nbsimTry/fast
+solarSystemSimulator/fast:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/build
+.PHONY : solarSystemSimulator/fast
 
-nbsimTry.o: nbsimTry.cpp.o
+solarSystemSimulator.o: solarSystemSimulator.cpp.o
 
-.PHONY : nbsimTry.o
+.PHONY : solarSystemSimulator.o
 
 # target to build an object file
-nbsimTry.cpp.o:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimTry.dir/nbsimTry.cpp.o
-.PHONY : nbsimTry.cpp.o
+solarSystemSimulator.cpp.o:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cpp.o
+.PHONY : solarSystemSimulator.cpp.o
 
-nbsimTry.i: nbsimTry.cpp.i
+solarSystemSimulator.i: solarSystemSimulator.cpp.i
 
-.PHONY : nbsimTry.i
+.PHONY : solarSystemSimulator.i
 
 # target to preprocess a source file
-nbsimTry.cpp.i:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimTry.dir/nbsimTry.cpp.i
-.PHONY : nbsimTry.cpp.i
+solarSystemSimulator.cpp.i:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cpp.i
+.PHONY : solarSystemSimulator.cpp.i
 
-nbsimTry.s: nbsimTry.cpp.s
+solarSystemSimulator.s: solarSystemSimulator.cpp.s
 
-.PHONY : nbsimTry.s
+.PHONY : solarSystemSimulator.s
 
 # target to generate assembly for a file
-nbsimTry.cpp.s:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimTry.dir/nbsimTry.cpp.s
-.PHONY : nbsimTry.cpp.s
+solarSystemSimulator.cpp.s:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cpp.s
+.PHONY : solarSystemSimulator.cpp.s
 
 # Help Target
 help:
@@ -222,10 +222,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... nbsimTry"
-	@echo "... nbsimTry.o"
-	@echo "... nbsimTry.i"
-	@echo "... nbsimTry.s"
+	@echo "... solarSystemSimulator"
+	@echo "... solarSystemSimulator.o"
+	@echo "... solarSystemSimulator.i"
+	@echo "... solarSystemSimulator.s"
 .PHONY : help
 
 

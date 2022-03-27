@@ -545,17 +545,17 @@ phas0100assignment2/fast:
 .PHONY : phas0100assignment2/fast
 
 #=============================================================================
-# Target rules for targets named nbsimTry
+# Target rules for targets named solarSystemSimulator
 
 # Build rule for target.
-nbsimTry: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nbsimTry
-.PHONY : nbsimTry
+solarSystemSimulator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 solarSystemSimulator
+.PHONY : solarSystemSimulator
 
 # fast build rule for target.
-nbsimTry/fast:
-	$(MAKE) -f Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build.make Code/CommandLineApps/CMakeFiles/nbsimTry.dir/build
-.PHONY : nbsimTry/fast
+solarSystemSimulator/fast:
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/build
+.PHONY : solarSystemSimulator/fast
 
 # Help Target
 help:
@@ -599,7 +599,7 @@ help:
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
 	@echo "... phas0100assignment2"
-	@echo "... nbsimTry"
+	@echo "... solarSystemSimulator"
 .PHONY : help
 
 
