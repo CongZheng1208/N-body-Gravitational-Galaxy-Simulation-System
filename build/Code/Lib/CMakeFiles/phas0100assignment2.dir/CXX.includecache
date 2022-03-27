@@ -1066,6 +1066,24 @@ src/NumericalDiff/NumericalDiff.h
 
 ../Code/3rdParty/Eigen-3.2.2.1/unsupported/Eigen/src/NumericalDiff/NumericalDiff.h
 
+/workspaces/PHAS0100Assignment2/Code/Lib/nbsimMassiveParticle.cpp
+nbsimMassiveParticle.h
+/workspaces/PHAS0100Assignment2/Code/Lib/nbsimMassiveParticle.h
+iostream
+-
+string.h
+-
+
+/workspaces/PHAS0100Assignment2/Code/Lib/nbsimMassiveParticle.h
+iostream
+-
+string.h
+-
+Eigen/Dense
+-
+unsupported/Eigen/NonLinearOptimization
+-
+
 /workspaces/PHAS0100Assignment2/Code/Lib/nbsimParticle.cpp
 nbsimParticle.h
 /workspaces/PHAS0100Assignment2/Code/Lib/nbsimParticle.h

@@ -1081,6 +1081,10 @@ nbsimParticle.h
 -
 iostream
 -
+vector
+-
+algorithm
+-
 Eigen/Dense
 -
 unsupported/Eigen/NonLinearOptimization
