@@ -1089,6 +1089,8 @@ nbsimParticle.h
 -
 nbsimSolarSystemData.ipp
 /workspaces/PHAS0100Assignment2/Code/CommandLineApps/nbsimSolarSystemData.ipp
+omp.h
+-
 iostream
 -
 vector
