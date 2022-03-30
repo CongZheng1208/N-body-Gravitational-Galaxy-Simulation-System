@@ -53,7 +53,6 @@
 /workspaces/PHAS0100Assignment2/build/Code/CommandLineApps/CMakeFiles/install.dir
 /workspaces/PHAS0100Assignment2/build/Code/CommandLineApps/CMakeFiles/list_install_components.dir
 /workspaces/PHAS0100Assignment2/build/Code/CommandLineApps/CMakeFiles/rebuild_cache.dir
-/workspaces/PHAS0100Assignment2/build/Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir
 /workspaces/PHAS0100Assignment2/build/Code/CommandLineApps/CMakeFiles/edit_cache.dir
 /workspaces/PHAS0100Assignment2/build/Code/CommandLineApps/CMakeFiles/test.dir
 /workspaces/PHAS0100Assignment2/build/Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir
@@ -64,3 +63,4 @@
 /workspaces/PHAS0100Assignment2/build/Testing/CMakeFiles/rebuild_cache.dir
 /workspaces/PHAS0100Assignment2/build/Testing/CMakeFiles/edit_cache.dir
 /workspaces/PHAS0100Assignment2/build/Testing/CMakeFiles/test.dir
+/workspaces/PHAS0100Assignment2/build/Testing/CMakeFiles/nbsimSystemSimulatorTest.dir

@@ -79,6 +79,7 @@ solarSystemSimulator_EXTERNAL_OBJECTS =
 
 bin/solarSystemSimulator: Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cpp.o
 bin/solarSystemSimulator: Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/build.make
+bin/solarSystemSimulator: bin/libphas0100assignment2.a
 bin/solarSystemSimulator: Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/PHAS0100Assignment2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/solarSystemSimulator"
 	cd /workspaces/PHAS0100Assignment2/build/Code/CommandLineApps && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/solarSystemSimulator.dir/link.txt --verbose=$(VERBOSE)

@@ -167,6 +167,75 @@ depend:
 	cd /workspaces/PHAS0100Assignment2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/rule:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/rule
+.PHONY : Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/rule
+
+# Convenience name for target.
+nbsimSystemSimulatorTest: Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/rule
+
+.PHONY : nbsimSystemSimulatorTest
+
+# fast build rule for target.
+nbsimSystemSimulatorTest/fast:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/build.make Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/build
+.PHONY : nbsimSystemSimulatorTest/fast
+
+nbsimCatchMain.o: nbsimCatchMain.cpp.o
+
+.PHONY : nbsimCatchMain.o
+
+# target to build an object file
+nbsimCatchMain.cpp.o:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/build.make Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/nbsimCatchMain.cpp.o
+.PHONY : nbsimCatchMain.cpp.o
+
+nbsimCatchMain.i: nbsimCatchMain.cpp.i
+
+.PHONY : nbsimCatchMain.i
+
+# target to preprocess a source file
+nbsimCatchMain.cpp.i:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/build.make Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/nbsimCatchMain.cpp.i
+.PHONY : nbsimCatchMain.cpp.i
+
+nbsimCatchMain.s: nbsimCatchMain.cpp.s
+
+.PHONY : nbsimCatchMain.s
+
+# target to generate assembly for a file
+nbsimCatchMain.cpp.s:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/build.make Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/nbsimCatchMain.cpp.s
+.PHONY : nbsimCatchMain.cpp.s
+
+nbsimSystemSimulatorTest.o: nbsimSystemSimulatorTest.cpp.o
+
+.PHONY : nbsimSystemSimulatorTest.o
+
+# target to build an object file
+nbsimSystemSimulatorTest.cpp.o:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/build.make Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/nbsimSystemSimulatorTest.cpp.o
+.PHONY : nbsimSystemSimulatorTest.cpp.o
+
+nbsimSystemSimulatorTest.i: nbsimSystemSimulatorTest.cpp.i
+
+.PHONY : nbsimSystemSimulatorTest.i
+
+# target to preprocess a source file
+nbsimSystemSimulatorTest.cpp.i:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/build.make Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/nbsimSystemSimulatorTest.cpp.i
+.PHONY : nbsimSystemSimulatorTest.cpp.i
+
+nbsimSystemSimulatorTest.s: nbsimSystemSimulatorTest.cpp.s
+
+.PHONY : nbsimSystemSimulatorTest.s
+
+# target to generate assembly for a file
+nbsimSystemSimulatorTest.cpp.s:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/build.make Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/nbsimSystemSimulatorTest.cpp.s
+.PHONY : nbsimSystemSimulatorTest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -180,6 +249,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... nbsimSystemSimulatorTest"
+	@echo "... nbsimCatchMain.o"
+	@echo "... nbsimCatchMain.i"
+	@echo "... nbsimCatchMain.s"
+	@echo "... nbsimSystemSimulatorTest.o"
+	@echo "... nbsimSystemSimulatorTest.i"
+	@echo "... nbsimSystemSimulatorTest.s"
 .PHONY : help
 
 

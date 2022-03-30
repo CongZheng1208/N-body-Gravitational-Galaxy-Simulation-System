@@ -1066,7 +1066,27 @@ src/NumericalDiff/NumericalDiff.h
 
 ../Code/3rdParty/Eigen-3.2.2.1/unsupported/Eigen/src/NumericalDiff/NumericalDiff.h
 
+../Code/Lib/nbsimMassiveParticle.h
+iostream
+-
+string.h
+-
+Eigen/Dense
+-
+unsupported/Eigen/NonLinearOptimization
+-
+
 ../Code/Lib/nbsimParticle.h
+iostream
+-
+string.h
+-
+Eigen/Dense
+-
+unsupported/Eigen/NonLinearOptimization
+-
+
+../Code/Lib/nbsimParticleGenerator.h
 iostream
 -
 string.h
@@ -1086,7 +1106,11 @@ Eigen/Dense
 
 /workspaces/PHAS0100Assignment2/Code/CommandLineApps/solarSystemSimulator.cpp
 nbsimParticle.h
--
+/workspaces/PHAS0100Assignment2/Code/CommandLineApps/nbsimParticle.h
+nbsimMassiveParticle.h
+/workspaces/PHAS0100Assignment2/Code/CommandLineApps/nbsimMassiveParticle.h
+nbsimParticleGenerator.h
+/workspaces/PHAS0100Assignment2/Code/CommandLineApps/nbsimParticleGenerator.h
 nbsimSolarSystemData.ipp
 /workspaces/PHAS0100Assignment2/Code/CommandLineApps/nbsimSolarSystemData.ipp
 omp.h

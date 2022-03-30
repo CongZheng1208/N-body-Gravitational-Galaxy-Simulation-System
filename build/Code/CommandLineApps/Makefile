@@ -168,21 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/rule:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/rule
-.PHONY : Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/rule
-
-# Convenience name for target.
-openMpSystemSimulator: Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/rule
-
-.PHONY : openMpSystemSimulator
-
-# fast build rule for target.
-openMpSystemSimulator/fast:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/build
-.PHONY : openMpSystemSimulator/fast
-
-# Convenience name for target.
 Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/rule:
 	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/rule
 .PHONY : Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/rule
@@ -196,33 +181,6 @@ solarSystemSimulator: Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/r
 solarSystemSimulator/fast:
 	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/build
 .PHONY : solarSystemSimulator/fast
-
-openMpSystemSimulator.o: openMpSystemSimulator.cpp.o
-
-.PHONY : openMpSystemSimulator.o
-
-# target to build an object file
-openMpSystemSimulator.cpp.o:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/openMpSystemSimulator.cpp.o
-.PHONY : openMpSystemSimulator.cpp.o
-
-openMpSystemSimulator.i: openMpSystemSimulator.cpp.i
-
-.PHONY : openMpSystemSimulator.i
-
-# target to preprocess a source file
-openMpSystemSimulator.cpp.i:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/openMpSystemSimulator.cpp.i
-.PHONY : openMpSystemSimulator.cpp.i
-
-openMpSystemSimulator.s: openMpSystemSimulator.cpp.s
-
-.PHONY : openMpSystemSimulator.s
-
-# target to generate assembly for a file
-openMpSystemSimulator.cpp.s:
-	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/openMpSystemSimulator.cpp.s
-.PHONY : openMpSystemSimulator.cpp.s
 
 solarSystemSimulator.o: solarSystemSimulator.cpp.o
 
@@ -262,13 +220,9 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... openMpSystemSimulator"
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... solarSystemSimulator"
-	@echo "... openMpSystemSimulator.o"
-	@echo "... openMpSystemSimulator.i"
-	@echo "... openMpSystemSimulator.s"
 	@echo "... solarSystemSimulator.o"
 	@echo "... solarSystemSimulator.i"
 	@echo "... solarSystemSimulator.s"

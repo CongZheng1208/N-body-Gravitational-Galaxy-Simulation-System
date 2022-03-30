@@ -212,7 +212,9 @@ Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cp
 Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cpp.o: ../Code/3rdParty/Eigen-3.2.2.1/unsupported/Eigen/src/NonLinearOptimization/r1updt.h
 Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cpp.o: ../Code/3rdParty/Eigen-3.2.2.1/unsupported/Eigen/src/NonLinearOptimization/rwupdt.h
 Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cpp.o: ../Code/3rdParty/Eigen-3.2.2.1/unsupported/Eigen/src/NumericalDiff/NumericalDiff.h
+Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cpp.o: ../Code/Lib/nbsimMassiveParticle.h
 Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cpp.o: ../Code/Lib/nbsimParticle.h
+Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cpp.o: ../Code/Lib/nbsimParticleGenerator.h
 Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cpp.o: ../Code/Lib/nbsimSolarSystemData.ipp
 Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cpp.o: ../Code/CommandLineApps/solarSystemSimulator.cpp
 

@@ -545,19 +545,6 @@ phas0100assignment2/fast:
 .PHONY : phas0100assignment2/fast
 
 #=============================================================================
-# Target rules for targets named openMpSystemSimulator
-
-# Build rule for target.
-openMpSystemSimulator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 openMpSystemSimulator
-.PHONY : openMpSystemSimulator
-
-# fast build rule for target.
-openMpSystemSimulator/fast:
-	$(MAKE) -f Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/openMpSystemSimulator.dir/build
-.PHONY : openMpSystemSimulator/fast
-
-#=============================================================================
 # Target rules for targets named solarSystemSimulator
 
 # Build rule for target.
@@ -569,6 +556,19 @@ solarSystemSimulator: cmake_check_build_system
 solarSystemSimulator/fast:
 	$(MAKE) -f Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/build.make Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/build
 .PHONY : solarSystemSimulator/fast
+
+#=============================================================================
+# Target rules for targets named nbsimSystemSimulatorTest
+
+# Build rule for target.
+nbsimSystemSimulatorTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nbsimSystemSimulatorTest
+.PHONY : nbsimSystemSimulatorTest
+
+# fast build rule for target.
+nbsimSystemSimulatorTest/fast:
+	$(MAKE) -f Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/build.make Testing/CMakeFiles/nbsimSystemSimulatorTest.dir/build
+.PHONY : nbsimSystemSimulatorTest/fast
 
 # Help Target
 help:
@@ -612,8 +612,8 @@ help:
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
 	@echo "... phas0100assignment2"
-	@echo "... openMpSystemSimulator"
 	@echo "... solarSystemSimulator"
+	@echo "... nbsimSystemSimulatorTest"
 .PHONY : help
 
 
