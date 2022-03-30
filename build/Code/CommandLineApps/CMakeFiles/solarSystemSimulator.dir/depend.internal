@@ -216,5 +216,4 @@ Code/CommandLineApps/CMakeFiles/solarSystemSimulator.dir/solarSystemSimulator.cp
  ../Code/Lib/nbsimMassiveParticle.h
  ../Code/Lib/nbsimParticle.h
  ../Code/Lib/nbsimParticleGenerator.h
- ../Code/Lib/nbsimSolarSystemData.ipp
  /workspaces/PHAS0100Assignment2/Code/CommandLineApps/solarSystemSimulator.cpp

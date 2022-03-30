@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/phas0100assignment2.dir/nbsimMassiveParticle.cpp.o"
   "CMakeFiles/phas0100assignment2.dir/nbsimMyFunctions.cpp.o"
   "CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.o"
+  "CMakeFiles/phas0100assignment2.dir/nbsimParticleGenerator.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

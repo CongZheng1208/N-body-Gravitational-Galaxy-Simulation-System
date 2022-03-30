@@ -317,6 +317,33 @@ nbsimParticle.cpp.s:
 	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/Lib/CMakeFiles/phas0100assignment2.dir/build.make Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimParticle.cpp.s
 .PHONY : nbsimParticle.cpp.s
 
+nbsimParticleGenerator.o: nbsimParticleGenerator.cpp.o
+
+.PHONY : nbsimParticleGenerator.o
+
+# target to build an object file
+nbsimParticleGenerator.cpp.o:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/Lib/CMakeFiles/phas0100assignment2.dir/build.make Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimParticleGenerator.cpp.o
+.PHONY : nbsimParticleGenerator.cpp.o
+
+nbsimParticleGenerator.i: nbsimParticleGenerator.cpp.i
+
+.PHONY : nbsimParticleGenerator.i
+
+# target to preprocess a source file
+nbsimParticleGenerator.cpp.i:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/Lib/CMakeFiles/phas0100assignment2.dir/build.make Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimParticleGenerator.cpp.i
+.PHONY : nbsimParticleGenerator.cpp.i
+
+nbsimParticleGenerator.s: nbsimParticleGenerator.cpp.s
+
+.PHONY : nbsimParticleGenerator.s
+
+# target to generate assembly for a file
+nbsimParticleGenerator.cpp.s:
+	cd /workspaces/PHAS0100Assignment2/build && $(MAKE) -f Code/Lib/CMakeFiles/phas0100assignment2.dir/build.make Code/Lib/CMakeFiles/phas0100assignment2.dir/nbsimParticleGenerator.cpp.s
+.PHONY : nbsimParticleGenerator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -346,6 +373,9 @@ help:
 	@echo "... nbsimParticle.o"
 	@echo "... nbsimParticle.i"
 	@echo "... nbsimParticle.s"
+	@echo "... nbsimParticleGenerator.o"
+	@echo "... nbsimParticleGenerator.i"
+	@echo "... nbsimParticleGenerator.s"
 .PHONY : help
 
 
