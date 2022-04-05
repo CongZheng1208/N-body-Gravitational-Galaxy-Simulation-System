@@ -13,7 +13,8 @@
 #============================================================================*/
 
 set(_command_line_apps
-  nbsimMyFirstApp
+  solarSystemSimulator
+  openMpSystemSimulator
 )
 
 foreach(_app ${_command_line_apps})

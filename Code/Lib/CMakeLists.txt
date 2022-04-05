@@ -18,10 +18,16 @@ set(PHAS0100ASSIGNMENT2_LIBRARY_SRCS
   nbsimBasicTypes.cpp
   nbsimMyFunctions.cpp
   nbsimException.cpp
+  nbsimParticle.cpp
+  nbsimMassiveParticle.cpp
+  nbsimParticleGenerator.cpp
 )
 
 set(PHAS0100ASSIGNMENT2_LIBRARY_HDRS
   nbsimExceptionMacro.h
+  nbsimParticle.h
+  nbsimMassiveParticle.h
+  nbsimParticleGenerator.h
   nbsimSolarSystemData.ipp
 )
 
