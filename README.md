@@ -1,4 +1,4 @@
-PHAS0100Assignment2
+N-body Gravitational Galaxy Motion Simulation System
 ------------------
 
 [![Build Status](https://travis-ci.com/[USERNAME]/PHAS0100Assignment2.svg?branch=master)](https://travis-ci.com/[USERNAME]/PHAS0100Assignment2)
@@ -8,10 +8,8 @@ PHAS0100Assignment2
 Purpose
 -------
 
-This project serves as a starting point for the PHAS0100 Assignment 2 Gravitational N-body Simulation coursework. It has a reasonable folder structure for [CMake](https://cmake.org/) based projects,
+It has a reasonable folder structure for [CMake](https://cmake.org/) based projects,
 that use [CTest](https://cmake.org/) to run unit tests via [Catch](https://github.com/catchorg/Catch2). 
-
-Further information on the specific project is left as an exercise for the student.
 
 
 Credits
